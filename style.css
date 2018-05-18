@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(to right, #f857a6, #ff5858);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  Font-family: 'Open Sans', sans-serif;
+  Font-weight: 300;
+
+
+}
+
+
+input {
+  margin-top: 5%;
+}
+
+h1 {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+#intro {
+  margin-left: 10px;
+}
+
+
+
+.data-display {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background:#eee;
+  flex-direction: column;
+  width: 40%;
+  height: 50%;
+  border-radius: 20px 20px 20px 20px;
+  display: flex;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  justify-content: space-between;
+
+}
+
+
+.todo-filter {
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 5px 5px 5px 5px;
+  width: 90%;
+  height: 25px;
+  margin-bottom: 5%;
+}
+
+#add-btn {
+  margin-top: 5%;
+  width: 90%;
+  margin-left: 5%;
+  height: 25px;
+  background-color: #ff1493;
+  border-radius: 5px 5px 5px 5px;
+  color: white;
+  margin-bottom: 5%;
+}
+
+#add-todo {
+  margin-left: 5%;
+  width: 90%;
+  border-radius: 5px 5px 5px 5px;
+  height: 25px;
+
+}
+
+#completed-btn {
+  background-color: #eee;
+  border-color: #ff69b4;
+  color: #ff69b4;
+  border-radius: 5px;
+  margin-left: -77px;
+}
+
+.listing-form {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 15%;
+}
+
+#indv-items {
+  justify-content: space-between;
+}
+
+#myitems {
+  padding-left: -20px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
