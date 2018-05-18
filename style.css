@@ -8,10 +8,9 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  Font-family: 'Open Sans', sans-serif;
-  Font-weight: 300;
-
-
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  
 }
 
 
@@ -25,6 +24,7 @@ h1 {
 }
 #intro {
   margin-left: 10px;
+  margin-top: 10px;
 }
 
 
@@ -32,7 +32,7 @@ h1 {
 .data-display {
   margin-top: 10%;
   margin-bottom: 10%;
-  background:#eee;
+  background:white;
   flex-direction: column;
   width: 40%;
   height: 50%;
@@ -49,35 +49,47 @@ h1 {
   margin-right: 5%;
   border-radius: 5px 5px 5px 5px;
   width: 90%;
-  height: 25px;
+  height: 40px;
   margin-bottom: 5%;
+  border: .5px solid #eee;
+}
+
+.todo-filter::placeholder {
+  font-size: 14px;
 }
 
 #add-btn {
   margin-top: 5%;
   width: 90%;
   margin-left: 5%;
-  height: 25px;
+  height: 40px;
   background-color: #ff1493;
   border-radius: 5px 5px 5px 5px;
   color: white;
   margin-bottom: 5%;
+  font-weight: 300;
+
 }
 
 #add-todo {
   margin-left: 5%;
   width: 90%;
   border-radius: 5px 5px 5px 5px;
-  height: 25px;
+  height: 40px;
+  border: .5px solid #eee;
 
 }
 
+#add-todo::placeholder {
+  font-size: 14px;
+}
+
 #completed-btn {
-  background-color: #eee;
   border-color: #ff69b4;
   color: #ff69b4;
   border-radius: 5px;
   margin-left: -77px;
+  padding: 6px;
 }
 
 .listing-form {
@@ -85,6 +97,7 @@ h1 {
   justify-content: space-between;
   margin-left: 10%;
   margin-right: 15%;
+  flex-direction: row;
 }
 
 #indv-items {
@@ -92,7 +105,7 @@ h1 {
 }
 
 #myitems {
-  padding-left: -20px;
+  margin-right: -20px;
 }
 
 .completed {

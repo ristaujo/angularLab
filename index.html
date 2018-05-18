@@ -21,7 +21,7 @@
 
       <form class="listing-form">
         <p>{{$index + 1}}.</p>
-        <button type="button" id="completed-btn" ng-if="item.completed === false">Completed</button>
+        <button type="button" id="completed-btn" ng-if="item.completed === false">Complete</button>
         <p ng-class="{'completed': item.completed === true}" id="myitems">{{item.task}}</p>
         <i class="material-icons">clear</i>
       </form>
