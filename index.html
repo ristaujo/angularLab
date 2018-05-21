@@ -16,19 +16,19 @@
   <section ng-controller="toDoCtrl as ctrl" class="data-display">
     <h1>TODO List</h1>
     <p id="intro">A place to store the things you have to do!</p>
-    <input type="text" placeholder="filter your to dos" ng-model="filter"class="todo-filter">
-    <div ng-repeat="item in ctrl.items" id="indv-items">
+    <input type="text" placeholder="filter your to dos" ng-model="test" class="todo-filter">
+    <div ng-repeat="item in ctrl.items | filter : test" id="indv-items">
 
       <form class="listing-form">
         <p>{{$index + 1}}.</p>
-        <button type="button" id="completed-btn" ng-if="item.completed === false">Complete</button>
+        <button type="button" id="completed-btn" ng-if="item.completed === false" ng-click="ctrl.completeTask($index,item.completed);">Complete</button>
         <p ng-class="{'completed': item.completed === true}" id="myitems">{{item.task}}</p>
-        <i class="material-icons">clear</i>
+        <i class="material-icons" ng-click="ctrl.removeTask($index, task);">clear</i>
       </form>
 
     </div>
-        <input type="text" placeholder="add your to do" id="add-todo">
-        <button type="button" id="add-btn">ADD</button>
+        <input type="text" placeholder="add your to do" id="add-todo" ng-model="ctrl.item.task">
+        <button type="button" id="add-btn" ng-click="ctrl.addTask(ctrl.vm.item);">ADD</button>
 
   </section>
 
