@@ -88,8 +88,10 @@ h1 {
   border-color: #ff69b4;
   color: #ff69b4;
   border-radius: 5px;
-  margin-left: -77px;
+  margin-left: 30px;
   padding: 6px;
+  position: fixed;
+  margin-top: -7px;
 }
 
 .listing-form {
@@ -98,6 +100,7 @@ h1 {
   margin-left: 10%;
   margin-right: 15%;
   flex-direction: row;
+  flex-grow: 0;
 }
 
 #indv-items {
@@ -109,5 +112,9 @@ h1 {
 
 .completed {
   text-decoration: line-through;
+}
+
+.position-fix {
+  position: absolute;
 }
 

@@ -25,10 +25,11 @@
         <p ng-class="{'completed': item.completed === true}" id="myitems">{{item.task}}</p>
         <i class="material-icons" ng-click="ctrl.removeTask($index, task);">clear</i>
       </form>
+      <br>
 
     </div>
         <input type="text" placeholder="add your to do" id="add-todo" ng-model="ctrl.item.task">
-        <button type="button" id="add-btn" ng-click="ctrl.addTask(ctrl.vm.item);">ADD</button>
+        <button type="button" id="add-btn" ng-click="ctrl.addTask(ctrl.vm.item); ">ADD</button>
 
   </section>
 
